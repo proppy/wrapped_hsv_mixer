@@ -15,10 +15,11 @@ set ::env(VERILOG_FILES) "$::env(DESIGN_DIR)/wrapper.v \
     $::env(DESIGN_DIR)/rgb_mixer/src/rgb_mixer.v \
     $::env(DESIGN_DIR)/rgb_mixer/src/pwm.v \
     $::env(DESIGN_DIR)/rgb_mixer/src/debounce.v \
-    $::env(DESIGN_DIR)/rgb_mixer/src/encoder.v"
+    $::env(DESIGN_DIR)/rgb_mixer/src/encoder.v \
+    $::env(DESIGN_DIR)/rgb_mixer/src/hsv2rgb.v"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 180 210"
+set ::env(DIE_AREA) "0 0 350 350"
 set ::env(PL_TARGET_DENSITY) 0.75
 
 set ::env(SYNTH_DEFINES) "MPRJ_IO_PADS=38"

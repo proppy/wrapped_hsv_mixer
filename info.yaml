@@ -1,9 +1,9 @@
 --- 
 # information
 project: 
-  title: "RGB Mixer"
-  description: "reads 3 encoders and generates PWM signals to drive an RGB LED"
-  author: "Matt Venn"
+  title: "HSV Mixer"
+  description: "reads HSV values from 3 encoders, convert to them RGB, and generates PWM signals to drive an RGB LED"
+  author: "@proppy (forked from Matt Venn)"
   picture: doc/schematic.jpg
   license: LICENSE
 
@@ -40,6 +40,7 @@ source:
     - rgb_mixer/src/encoder.v
     - rgb_mixer/src/pwm.v
     - rgb_mixer/src/rgb_mixer.v
+    - rgb_mixer/src/hsv2rgb.v    
 
 # gds - check size = 300x300, nothing on metal 5, do a DRC, check 141 tristate buffers, check LVS
 final:
@@ -47,4 +48,3 @@ final:
   gds_filename: "gds/wrapped_rgb_mixer.gds"
   lef_filename: "lef/wrapped_rgb_mixer.lef"
   lvs_filename: "verilog/gl/wrapped_rgb_mixer.v"
-
