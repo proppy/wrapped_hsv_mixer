@@ -1,3 +1,6 @@
 [submodule "hsv_mixer"]
 	path = rgb_mixer
 	url = https://github.com/proppy/hsv_mixer
+[submodule "OpenLane"]
+	path = OpenLane
+	url = https://github.com/The-OpenROAD-Project/OpenLane
