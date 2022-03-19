@@ -37,3 +37,8 @@ set ::env(GND_NETS) [list {vssd1}]
 
 set ::env(FP_IO_VTHICKNESS_MULT) 4
 set ::env(FP_IO_HTHICKNESS_MULT) 4
+
+set ::env(MISMATCHES_OK) 1
+set ::env(RUN_CVC) 0
+set ::env(DIODE_INSERTION_STRATEGY) 3
+set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 5
