@@ -68,19 +68,36 @@ async def test_all(dut):
     assert dut.pwm1_out.value == 0
     assert dut.pwm1_out.value == 0
 
-    # do 3 ramps for each encoder 
-    max_count = 255
-    await run_encoder_test(encoder0, dut.uut.mprj.wrapped_rgb_mixer_3.rgb_mixer0.enc0, max_count)
-    await run_encoder_test(encoder1, dut.uut.mprj.wrapped_rgb_mixer_3.rgb_mixer0.enc1, max_count)
-    await run_encoder_test(encoder2, dut.uut.mprj.wrapped_rgb_mixer_3.rgb_mixer0.enc2, max_count)
-
-    # sync to pwm
+    max_ramp = 255
+    # ramp val
+    await run_encoder_test(encoder2, dut.enc2, max_ramp)
+    assert dut.rgb == 0xffffff
     await RisingEdge(dut.pwm0_out)
-    # pwm should all be on for max_count 
-    for i in range(max_count): 
-        assert dut.pwm0_out.value == 1
-        assert dut.pwm1_out.value == 1
-        assert dut.pwm2_out.value == 1
+    for i in range(255):
+        assert dut.pwm0_out == 1
+        assert dut.pwm1_out == 1
+        assert dut.pwm2_out == 1
+        await ClockCycles(dut.clk, 1)
+
+    # ramp sat up
+    await run_encoder_test(encoder1, dut.enc1, max_ramp)
+
+    assert dut.rgb == 0xff0000
+    await RisingEdge(dut.pwm0_out)
+    for i in range(255):
+        assert dut.pwm0_out == 1
+        assert dut.pwm1_out == 0
+        assert dut.pwm2_out == 0
+        await ClockCycles(dut.clk, 1)
+
+    # ramp hue
+    await run_encoder_test(encoder0, dut.enc0, max_ramp+1)
+    assert dut.rgb == 0xffff00
+    await RisingEdge(dut.pwm0_out)
+    for i in range(255):
+        assert dut.pwm0_out == 1
+        assert dut.pwm1_out == 1
+        assert dut.pwm2_out == 0
         await ClockCycles(dut.clk, 1)
 
 @cocotb.test()
@@ -104,17 +121,34 @@ async def test_all_gl(dut):
     assert dut.pwm1_out.value == 0
     print("pwm all 0")
 
-    # do 3 ramps for each encoder 
-    max_count = 255
-    await run_encoder_test(encoder0, None, max_count)
-    await run_encoder_test(encoder1, None, max_count)
-    await run_encoder_test(encoder2, None, max_count)
-
-    # sync to pwm
+    max_ramp = 255
+    # ramp val
+    await run_encoder_test(encoder2, dut.enc2, max_ramp)
+    assert dut.rgb == 0xffffff
     await RisingEdge(dut.pwm0_out)
-    # pwm should all be on for max_count 
-    for i in range(max_count): 
-        assert dut.pwm0_out.value == 1
-        assert dut.pwm1_out.value == 1
-        assert dut.pwm2_out.value == 1
+    for i in range(255):
+        assert dut.pwm0_out == 1
+        assert dut.pwm1_out == 1
+        assert dut.pwm2_out == 1
+        await ClockCycles(dut.clk, 1)
+
+    # ramp sat up
+    await run_encoder_test(encoder1, dut.enc1, max_ramp)
+
+    assert dut.rgb == 0xff0000
+    await RisingEdge(dut.pwm0_out)
+    for i in range(255):
+        assert dut.pwm0_out == 1
+        assert dut.pwm1_out == 0
+        assert dut.pwm2_out == 0
+        await ClockCycles(dut.clk, 1)
+
+    # ramp hue
+    await run_encoder_test(encoder0, dut.enc0, max_ramp+1)
+    assert dut.rgb == 0xffff00
+    await RisingEdge(dut.pwm0_out)
+    for i in range(255):
+        assert dut.pwm0_out == 1
+        assert dut.pwm1_out == 1
+        assert dut.pwm2_out == 0
         await ClockCycles(dut.clk, 1)
