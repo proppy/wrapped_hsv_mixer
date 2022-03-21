@@ -6,6 +6,7 @@ project:
   author: "@proppy (forked from Matt Venn)"
   picture: doc/schematic.jpg
   license: LICENSE
+  waive_caravel: "Matt can't get it to work"
 
 interfaces: ['la1', 'gpio']
 
@@ -13,15 +14,15 @@ interfaces: ['la1', 'gpio']
 caravel_test:
   recipe: "coco_test"
   gl_recipe: "coco_test_gl"
-  directory: "caravel_rgb_mixer"
+  directory: "caravel_hsv_mixer"
   id: 10
-  module_name: "wrapped_rgb_mixer"
-  instance_name: "wrapped_rgb_mixer"
+  module_name: "wrapped_hsv_mixer"
+  instance_name: "wrapped_hsv_mixer"
 
 # module test
 module_test:
   recipe: "all" 
-  directory: "rgb_mixer"
+  directory: "hsv_mixer"
   makefile: "Makefile"
 
 # run the wrapper formal proof
@@ -36,15 +37,15 @@ openlane:
 # source required for various configs and module instantiation
 source:
     - wrapper.v
-    - rgb_mixer/src/debounce.v
-    - rgb_mixer/src/encoder.v
-    - rgb_mixer/src/pwm.v
-    - rgb_mixer/src/rgb_mixer.v
-    - rgb_mixer/src/hsv2rgb.v    
+    - hsv_mixer/src/debounce.v
+    - hsv_mixer/src/encoder.v
+    - hsv_mixer/src/pwm.v
+    - hsv_mixer/src/hsv_mixer.v
+    - hsv_mixer/src/hsv2rgb.v    
 
 # gds - check size = 300x300, nothing on metal 5, do a DRC, check 141 tristate buffers, check LVS
 final:
   directory: "final"
-  gds_filename: "gds/wrapped_rgb_mixer.gds"
-  lef_filename: "lef/wrapped_rgb_mixer.lef"
-  lvs_filename: "verilog/gl/wrapped_rgb_mixer.v"
+  gds_filename: "gds/wrapped_hsv_mixer.gds"
+  lef_filename: "lef/wrapped_hsv_mixer.lef"
+  lvs_filename: "verilog/gl/wrapped_hsv_mixer.v"

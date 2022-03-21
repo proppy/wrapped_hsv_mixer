@@ -1,0 +1,83 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Jan 26 13:26:41 2021
+[*]
+[dumpfile] "/home/matt/work/asic-workshop/video_caravel/verilog/dv/caravel/user_proj_example/hsv_mixer/hsv_mixer.vcd"
+[dumpfile_mtime] "Tue Jan 26 13:25:50 2021"
+[dumpfile_size] 288717416
+[savefile] "/home/matt/work/asic-workshop/video_caravel/verilog/dv/caravel/user_proj_example/hsv_mixer/hsv_mixer.gtkw"
+[timestart] 0
+[size] 1813 1076
+[pos] -1 -1
+*-27.000000 190625001 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] hsv_mixer_tb.
+[treeopen] hsv_mixer_tb.uut.
+[treeopen] hsv_mixer_tb.uut.mprj.
+[treeopen] hsv_mixer_tb.uut.mprj.proj_0.
+[treeopen] hsv_mixer_tb.uut.mprj.proj_0.hsv_mixer0.
+[sst_width] 378
+[signals_width] 430
+[sst_expanded] 1
+[sst_vpaned_height] 303
+@28
+hsv_mixer_tb.clock
+hsv_mixer_tb.flash_clk
+hsv_mixer_tb.flash_csb
+hsv_mixer_tb.flash_io0
+hsv_mixer_tb.flash_io1
+@c00022
+hsv_mixer_tb.mprj_io[37:0]
+@28
+(0)hsv_mixer_tb.mprj_io[37:0]
+(1)hsv_mixer_tb.mprj_io[37:0]
+(2)hsv_mixer_tb.mprj_io[37:0]
+(3)hsv_mixer_tb.mprj_io[37:0]
+(4)hsv_mixer_tb.mprj_io[37:0]
+(5)hsv_mixer_tb.mprj_io[37:0]
+(6)hsv_mixer_tb.mprj_io[37:0]
+(7)hsv_mixer_tb.mprj_io[37:0]
+(8)hsv_mixer_tb.mprj_io[37:0]
+(9)hsv_mixer_tb.mprj_io[37:0]
+(10)hsv_mixer_tb.mprj_io[37:0]
+(11)hsv_mixer_tb.mprj_io[37:0]
+(12)hsv_mixer_tb.mprj_io[37:0]
+(13)hsv_mixer_tb.mprj_io[37:0]
+(14)hsv_mixer_tb.mprj_io[37:0]
+(15)hsv_mixer_tb.mprj_io[37:0]
+(16)hsv_mixer_tb.mprj_io[37:0]
+(17)hsv_mixer_tb.mprj_io[37:0]
+(18)hsv_mixer_tb.mprj_io[37:0]
+(19)hsv_mixer_tb.mprj_io[37:0]
+(20)hsv_mixer_tb.mprj_io[37:0]
+(21)hsv_mixer_tb.mprj_io[37:0]
+(22)hsv_mixer_tb.mprj_io[37:0]
+(23)hsv_mixer_tb.mprj_io[37:0]
+(24)hsv_mixer_tb.mprj_io[37:0]
+(25)hsv_mixer_tb.mprj_io[37:0]
+(26)hsv_mixer_tb.mprj_io[37:0]
+(27)hsv_mixer_tb.mprj_io[37:0]
+(28)hsv_mixer_tb.mprj_io[37:0]
+(29)hsv_mixer_tb.mprj_io[37:0]
+(30)hsv_mixer_tb.mprj_io[37:0]
+(31)hsv_mixer_tb.mprj_io[37:0]
+(32)hsv_mixer_tb.mprj_io[37:0]
+(33)hsv_mixer_tb.mprj_io[37:0]
+(34)hsv_mixer_tb.mprj_io[37:0]
+(35)hsv_mixer_tb.mprj_io[37:0]
+(36)hsv_mixer_tb.mprj_io[37:0]
+(37)hsv_mixer_tb.mprj_io[37:0]
+@1401200
+-group_end
+@28
+hsv_mixer_tb.uut.mprj.proj_0.active
+hsv_mixer_tb.enc0_a
+hsv_mixer_tb.enc0_b
+hsv_mixer_tb.enc1_a
+hsv_mixer_tb.enc1_b
+hsv_mixer_tb.enc2_a
+hsv_mixer_tb.enc2_b
+hsv_mixer_tb.pwm0_out
+hsv_mixer_tb.pwm1_out
+hsv_mixer_tb.pwm2_out
+[pattern_trace] 1
+[pattern_trace] 0

@@ -9,7 +9,7 @@
 //`define USE_MEM 0
 //`define USE_IRQ 0
 
-module wrapped_rgb_mixer (
+module wrapped_hsv_mixer (
 `ifdef USE_POWER_PINS
     inout vccd1,
     inout vssd1,
@@ -105,7 +105,7 @@ module wrapped_rgb_mixer (
     assign buf_io_oeb = {`MPRJ_IO_PADS{1'b0}};
 
     // instantiate your module here, connecting what you need of the above signals
-    rgb_mixer rgb_mixer0(
+    hsv_mixer hsv_mixer0(
         .clk        (wb_clk_i),
         .reset      (la1_data_in[0]),
         .enc0_a     (io_in[8]),

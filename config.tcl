@@ -1,7 +1,7 @@
 # User config
 set script_dir [file dirname [file normalize [info script]]]
 
-set ::env(DESIGN_NAME) wrapped_rgb_mixer
+set ::env(DESIGN_NAME) wrapped_hsv_mixer
 
 # save some time
 set ::env(RUN_KLAYOUT_XOR) 0
@@ -12,11 +12,11 @@ set ::env(PL_RESIZER_BUFFER_OUTPUT_PORTS) 0
 
 # Change if needed
 set ::env(VERILOG_FILES) "$::env(DESIGN_DIR)/wrapper.v \
-    $::env(DESIGN_DIR)/rgb_mixer/src/rgb_mixer.v \
-    $::env(DESIGN_DIR)/rgb_mixer/src/pwm.v \
-    $::env(DESIGN_DIR)/rgb_mixer/src/debounce.v \
-    $::env(DESIGN_DIR)/rgb_mixer/src/encoder.v \
-    $::env(DESIGN_DIR)/rgb_mixer/src/hsv2rgb.v"
+    $::env(DESIGN_DIR)/hsv_mixer/src/hsv_mixer.v \
+    $::env(DESIGN_DIR)/hsv_mixer/src/pwm.v \
+    $::env(DESIGN_DIR)/hsv_mixer/src/debounce.v \
+    $::env(DESIGN_DIR)/hsv_mixer/src/encoder.v \
+    $::env(DESIGN_DIR)/hsv_mixer/src/hsv2rgb.v"
 
 set ::env(PL_TARGET_DENSITY) 0.4
 set ::env(FP_CORE_UTIL) 30
@@ -24,7 +24,7 @@ set ::env(FP_CORE_UTIL) 30
 set ::env(SYNTH_DEFINES) "MPRJ_IO_PADS=38"
 
 # Fill this
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "20"
 set ::env(CLOCK_PORT) "wb_clk_i"
 
 set ::env(DESIGN_IS_CORE) 0
