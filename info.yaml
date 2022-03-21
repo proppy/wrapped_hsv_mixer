@@ -4,7 +4,7 @@ project:
   title: "HSV Mixer"
   description: "reads HSV values from 3 encoders, convert to them RGB, and generates PWM signals to drive an RGB LED"
   author: "@proppy (forked from Matt Venn)"
-  picture: doc/schematic.jpg
+  picture: doc/hsv2rgb.jpg
   license: LICENSE
   waive_caravel: "Matt can't get it to work"
 
