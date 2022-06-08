@@ -1,0 +1,15 @@
+OpenROAD 0b8b7ae255f8fbbbefa57d443949b84e73eed757 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /content/wrapped_hsv_mixer/runs/RUN_2022.06.08_16.33.07/tmp/merged.unpadded.nom.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /content/wrapped_hsv_mixer/runs/RUN_2022.06.08_16.33.07/tmp/merged.unpadded.nom.lef
+[INFO ODB-0127] Reading DEF file: /content/wrapped_hsv_mixer/runs/RUN_2022.06.08_16.33.07/tmp/placement/8-resizer.def
+[INFO ODB-0128] Design: wrapped_hsv_mixer
+[INFO ODB-0130]     Created 214 pins.
+[INFO ODB-0131]     Created 5080 components and 28649 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 17464 connections.
+[INFO ODB-0133]     Created 3522 nets and 11080 connections.
+[INFO ODB-0134] Finished DEF file: /content/wrapped_hsv_mixer/runs/RUN_2022.06.08_16.33.07/tmp/placement/8-resizer.def

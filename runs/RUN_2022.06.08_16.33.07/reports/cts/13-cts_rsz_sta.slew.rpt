@@ -1,0 +1,24 @@
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+clkbuf_3_0__f_wb_clk_i/X                  5     19    -14 (VIOLATED)
+clkbuf_3_2__f_wb_clk_i/X                  5     17    -12 (VIOLATED)
+clkbuf_3_3__f_wb_clk_i/X                  5     16    -11 (VIOLATED)
+clkbuf_3_1__f_wb_clk_i/X                  5     15    -10 (VIOLATED)
+clkbuf_3_4__f_wb_clk_i/X                  5     12     -7 (VIOLATED)
+clkbuf_3_5__f_wb_clk_i/X                  5     12     -7 (VIOLATED)
+clkbuf_3_7__f_wb_clk_i/X                  5     11     -6 (VIOLATED)
+clkbuf_3_6__f_wb_clk_i/X                  5      9     -4 (VIOLATED)
+clkbuf_0_wb_clk_i/X                       5      8     -3 (VIOLATED)
+
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 9
+max cap violation count 0
+============================================================================

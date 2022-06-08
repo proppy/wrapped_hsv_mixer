@@ -1,0 +1,26 @@
+
+21. Printing statistics.
+
+=== wrapped_hsv_mixer ===
+
+   Number of wires:               4196
+   Number of wire bits:           4563
+   Number of public wires:          35
+   Number of public wire bits:     326
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               4100
+     $_ANDNOT_                    1484
+     $_AND_                        118
+     $_MUX_                        170
+     $_NAND_                        55
+     $_NOR_                        193
+     $_NOT_                        267
+     $_ORNOT_                      160
+     $_OR_                         418
+     $_XNOR_                       320
+     $_XOR_                        696
+     sky130_fd_sc_hd__dfxtp_2      111
+     sky130_fd_sc_hd__ebufn_2      108
+

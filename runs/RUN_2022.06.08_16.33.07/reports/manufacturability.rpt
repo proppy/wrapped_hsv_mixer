@@ -1,0 +1,19 @@
+Design Name: wrapped_hsv_mixer
+Run Directory: /content/wrapped_hsv_mixer/runs/RUN_2022.06.08_16.33.07
+----------------------------------------
+
+Magic DRC Summary:
+Source: /content/wrapped_hsv_mixer/runs/RUN_2022.06.08_16.33.07/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /content/wrapped_hsv_mixer/runs/RUN_2022.06.08_16.33.07/logs/signoff/36-wrapped_hsv_mixer.lvs.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /content/wrapped_hsv_mixer/runs/RUN_2022.06.08_16.33.07/reports/signoff/antenna.rpt
+Number of pins violated: 1
+Number of nets violated: 1
